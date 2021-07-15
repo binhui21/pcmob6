@@ -1,6 +1,6 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
-import { useSelector } from "react-redux";
+//import { useSelector } from "react-redux";
 import { commonStyles, lightStyles } from "../styles/commonStyles";
 
 export default function EditScreen({ navigation }) {
