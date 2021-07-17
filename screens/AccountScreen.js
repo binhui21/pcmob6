@@ -58,6 +58,7 @@ export default function AccountScreen({ navigation }) {
   }
 
   function changePicSize() {
+
     Animated.loop(
       Animated.timing(picSize, {
         toValue: 1,
