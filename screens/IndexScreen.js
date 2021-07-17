@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Text, View, TouchableOpacity, FlatList, RefreshControl} from "react-native";
+import { Text, View, TouchableOpacity, FlatList, RefreshControl } from "react-native";
 import { FontAwesome } from "@expo/vector-icons";
 import axios from "axios";
 import { API, API_POSTS } from "../constants/API";
@@ -12,6 +12,7 @@ export default function IndexScreen({ navigation, route }) {
   const [refreshing, setRefreshing] = useState(false);
   const styles = lightStyles;
   const token = useSelector((state) => state.auth.token);
+  const [modalVisible, setModalVisible] = useState(false);
 
   // This is to set up the top right button
   useEffect(() => {
