@@ -1,15 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { StyleSheet, Text, View, TextInput, TouchableOpacity } from "react-native";
-//import { useSelector } from "react-redux";
 import { commonStyles, lightStyles } from "../styles/commonStyles";
 import { API, API_POSTS } from "../constants/API";
 import axios from "axios";
+import { useSelector } from "react-redux";
 
 export default function EditScreen({ navigation, route }) {
 
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
   const styles = { ...lightStyles, ...commonStyles }
+  const token = useSelector((state) => state.auth.token);
 
   useEffect(() => {
     const post = route.params.post

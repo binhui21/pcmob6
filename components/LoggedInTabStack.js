@@ -2,7 +2,8 @@ import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import BlogStack from '../components/BlogStack';
 import AccountStack from '../components/AccountStack';
-import { FontAwesome } from '@expo/vector-icons'; 
+import { FontAwesome } from '@expo/vector-icons';
+import { useSelector } from 'react-redux';
 
 const Tab = createBottomTabNavigator();
 
