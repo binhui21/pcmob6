@@ -50,6 +50,7 @@ export default function AccountScreen({ navigation }) {
 
   function signOut() {
     dispatch(logOutAction())
+    setIsLogIn = true
     navigation.navigate("SignInSignUp");
   }
 
