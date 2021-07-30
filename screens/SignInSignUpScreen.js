@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { StyleSheet, View, Text, TextInput, TouchableOpacity, UIManager, LayoutAnimation, ActivityIndicator, Keyboard } from 'react-native';
+import { StyleSheet, View, Text, TextInput, TouchableOpacity, UIManager, LayoutAnimation, ActivityIndicator, Keyboard, Platform } from 'react-native';
 import { API, API_LOGIN, API_SIGNUP } from '../constants/API';
 import axios from 'axios';
 import { useDispatch } from 'react-redux';
@@ -147,7 +147,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'center',
+    alignContent: 'center',
     justifyContent: 'center',
   },
   title: {
